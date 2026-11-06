@@ -1,0 +1,146 @@
+:root {
+    --verde-primario: #53913e;
+    --verde-escuro: #558e53;
+    --verde-hover: #568646;
+    --verde-claro: #eef5ec;
+    --cinza-borda: #cccccc;
+    --cinza-borda-clara: #d7ddd5;
+    --texto-escuro: #222222;
+    --texto-medio: #333333;
+    --texto-claro: #777777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--texto-escuro);
+    min-height: 100vh;
+}
+
+.mae {
+    display: flex;
+    min-height: 100vh;
+}
+
+.esquerda {
+    width: 600px;
+    padding: 56px;
+    background-color: var(--verde-escuro);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.marca-logo {
+    height: 64px;
+    width: auto;
+    padding: 8px;
+    background-color: #558e53;
+}
+
+.mensagem h1 {
+    margin-bottom: 16px;
+    font-size: 44px;
+    line-height: 1.15;
+}
+
+.mensagem p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.esquerda small {
+    font-size: 13px;
+}
+
+.direita {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: var(--texto-escuro);
+}
+
+.subtitulo {
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--texto-claro);
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--texto-medio);
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 11px 12px;
+    font-size: 14px;
+    color: var(--texto-escuro);
+    border: 1px solid var(--cinza-borda);
+    background-color: #ffffff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--verde-primario);
+    box-shadow: 0 0 0 1px var(--verde-primario);
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 12px 26px;
+    border: none;
+    background-color: var(--verde-primario);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--verde-hover);
+}
+
+form a {
+    font-size: 13px;
+    text-align: center;
+    color: var(--verde-escuro);
+}
+
+form a:hover {
+    color: var(--verde-hover);
+}
